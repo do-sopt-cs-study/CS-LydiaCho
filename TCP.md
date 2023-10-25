@@ -13,8 +13,9 @@ TCP segment는 데이터 통신 시 TCP에 해당하는 4계층에서 만들어�
 데이터에는 윗 계층에서 전달받은 데이터 블록 전체가 들어간다.
 
 즉, 3계층 IP 단위블록을 4계층에서 전달받으면 그 앞에 4계층 통신과 관련된 옵션 사항들을 담은 헤더를 앞에 추가하고 다음 계층으로 보내주는 방식이다.
+![3강-25](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/3f908935-3ac3-4bdd-893e-2308ef6e4759)
 
-![3강-25.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/a0e3d5c6-1c95-44a8-a3c6-36441659370c/3%EA%B0%95-25.jpg)
+
 
 TCP의 헤더는 위와 같이 구성되어있는데, 이중에서 우리가 주목해야 하는 부분은
 
@@ -72,7 +73,8 @@ A와 B가 본격적인 데이터 통신을 하기 전과 후, 말그대로 ‘�
 
 ### 3-way handshake
 
-![3강-48.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/7cad3e7d-2fce-4409-9749-ea04a1737ec9/3%EA%B0%95-48.jpg)
+![3강-48](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/025e06a9-072a-4a62-b0b6-c681ff689807)
+
 
 통신을 시작하는 시나리오는 다음과 같다
 
@@ -92,7 +94,8 @@ A와 B가 본격적인 데이터 통신을 하기 전과 후, 말그대로 ‘�
 
 ### 4-way handshake
 
-![3강-51.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/36b18cdd-5ad9-4fe2-b053-f8e008d4aa0d/3%EA%B0%95-51.jpg)
+![3강-51](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/de510177-f188-41a6-9e3e-c3cf565c5ff8)
+
 
 필요한 데이터를 모두 주고 받고 통신을 종료하는 시나리오는 다음과 같다.
 
@@ -135,7 +138,8 @@ A와 B가 본격적인 데이터 통신을 하기 전과 후, 말그대로 ‘�
 
 ### 1. Stop and Wait 방식
 
-!https://woovictory.github.io/img/stop_and_wait.png
+![stop_and_wait png](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/e9eb93c0-5e78-49b6-95d8-5e97dd3a6317)
+
 
 - 매번 전송한 패킷에 대해 응답을 받아야만 그 다음 패킷을 전송할 수 있다.
 - 구조가 간단한 대신, 하나를 주고 하나를 받기 때문에 **비효율적이다.**
@@ -149,17 +153,20 @@ A와 B가 본격적인 데이터 통신을 하기 전과 후, 말그대로 ‘�
 - 윈도우는 전송, 수신 스테이션 양쪽에서 만들어진 `버퍼(Buffer)`의 크기이다.
 - 윈도우의 크기 = (가장 최근 ACK로 응답한 프레임의 수) - (이전에 ACK 프레임을 보낸 프레임의 수)
 - 슬라이딩 윈도우 기법은 Stop and Wait 기법의 비효율성을 개선한 기법이다.
-- ACK 프레임을 수신하지 않더라도 여러 개의 프레임을 연속적으로 전송할 수 있다.
+- ACK 프레임을 수신하지 않더라도 여러 개의 프레임을 연속적으로 전송할 수 있다
 
-!https://woovictory.github.io/img/error_flow_control_2.png
+![error_flow_control_2 png](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/ec6079ed-a763-4135-8eaa-c4353bf1024e)
+
 
 위와 같은 구조에서 데이터 0과 1을 전송했다고 가정하면 슬라이딩 윈도우의 구조는 아래와 같이 변한다. 윈도우의 크기는 전송한 데이터 프레임만큼 왼쪽 경계가 줄어들게 된다.
 
-!https://woovictory.github.io/img/error_flow_control_3.png
+![error_flow_control_3 png](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/704b8278-e164-4830-8657-1b96a591810e)
+
 
 이때 수신측에서 ACK라는 프레임을 받게 된다면 전송측은 0과 1 데이터를 정상적으로 받았음을 알게 되고, 전송측은 ACK 프레임에 따른 프레임의 수만큼 오른쪽으로 경계가 확장된다.
 
-!https://woovictory.github.io/img/error_flow_control_4.png
+![error_flow_control_4 png](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/07fcae1b-5ff6-4108-92e7-ee99a60dbcf9)
+
 
 ## **혼잡 제어**
 
@@ -196,7 +203,7 @@ Slow Start 방식은 AIMD 방식과 마찬가지로 패킷을 하나씩 보내�
 3. 수신 호스트로부터 수신응답을 수신하면 윈도우의 크기를 4로 하여 전송
 4. 수신 호스트로부터 수신응답을 수신하면 윈도위의 크기를 8로 하여 전송
 
-!https://woovictory.github.io/img/error_flow_control_10.png
+![error_flow_control_10 png](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/b923ae2a-a952-4c79-aaac-14dec64f877c)
 
 - 미리 정해진 임계 값(threshold)에 도달할 때까지 윈도우의 크기를 2배씩 증가시킨다.
 - Slow Start란 이름을 사용하지만, 매 전송마다 두 배씩 증가하기 때문에 전송되어지는 데이터의 크기는 지수 함수적으로 증가한다.
@@ -204,7 +211,8 @@ Slow Start 방식은 AIMD 방식과 마찬가지로 패킷을 하나씩 보내�
 
 ### 3. 혼잡 회피(Congestion Avoidance)
 
-![3강-65.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/9504f516-2ce7-41f7-a54b-63ceb8abe48b/3%EA%B0%95-65.jpg)
+![3강-65](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/7e537dd6-69d0-4d4e-8538-196a00d1ca55)
+
 
 윈도우의 크기가 임계 값에 도달한 이후에 데이터의 손실이 발생할 확률이 높아지게 된다. 이는 데이터를 전송함에 있어서 조심하는 단계이다.
 
