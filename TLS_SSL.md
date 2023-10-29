@@ -49,7 +49,7 @@ SSL인증서를 기준으로 클라이언트가 접속한 서버가 클라이언
 - 당연히 웹사이트 방문자에게는 해당 과정이 보이지 않도록 순간적으로 이루어짐
 - TLS/SSL handshake의 가장 큰 특징은, **대칭키 방식과 비대칭키 방식을 혼용한다**는 점
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/c166c17f-7632-4a89-9d86-335949cbefb8/Untitled.png)
+![Untitled-23](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/f9e0dd19-f513-4300-9b7b-0ecc898b1c62)
 
 1. `client Hello`: client에서 SSL버전 정보와 지원하는 암호화 방식, 무작위 바이트 문자열(이후에 사용하게 되는 중요한 데이터입니다)이 포함 되어 전달. 이미 SSL handshake를 했었다면 세션을 재사용 할 수 있음.
 2. `server Hello`: 지원하는 암호화 방식 중 서버에서 어떤것을 사용할 지, 세션 ID, 서버측에서 생성한 무작위 바이트 문자열을 전송. 클라이언트에서 인증서를 요구하게 되면 SSL 인증서를 전송.
