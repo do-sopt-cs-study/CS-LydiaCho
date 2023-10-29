@@ -9,7 +9,7 @@
   - 만약 사용자의 아이디와 비밀번호를 입력하는 로그인 통신을 HTTP로 하게된다면?
   - 이렇게 데이터를 보호해야 할 경우에 사용하는 프로토콜이 HTTPS
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/cbc312e4-dbc6-4625-887f-c8baba1ae750/Untitled.png)
+![Untitled-24](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/47fe3745-22a0-4c92-9383-10244739749e)
 
 우리에게 익숙한 OSI 7계층은 왼쪽이다.
 
@@ -25,17 +25,17 @@
 
 쉽게 말해, `HTTPS = HTTP + SSL` 라고 할 수 있다.
 
-![스크린샷 2023-10-28 오전 3.24.49.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/c4202007-95e1-4a4f-b5f4-f12650e0a007/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2023-10-28_%EC%98%A4%EC%A0%84_3.24.49.png)
+<img width="506" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202023-10-28%20%EC%98%A4%EC%A0%84%203 24 49" src="https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/6152d40d-0f92-425e-94e9-7daacdafc4c0">
+
 
 이렇게 URL 앞에 https가 표시되어 있다면 ? → 웹사이트가 SSL/TLS 인증서로 보호되는 경우
 
 브라우저창의 **자물쇠 기호**를 클릭해보면 해당 **인증서**를 볼 수 있다.
 
-![스크린샷 2023-10-28 오전 3.46.38.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/ad26a87b-1c98-48a7-ade2-d92727d600c9/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2023-10-28_%EC%98%A4%EC%A0%84_3.46.38.png)
+<img width="604" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202023-10-28%20%EC%98%A4%EC%A0%84%203 46 38" src="https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/6f51e651-ff6c-4340-94a8-6beb09758cff">
+<img width="604" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202023-10-28%20%EC%98%A4%EC%A0%84%203 46 52" src="https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/d38ff19c-f411-487e-8c15-1e5f22019e50">
+<img width="604" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202023-10-28%20%EC%98%A4%EC%A0%84%203 48 58" src="https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/9d97ce3b-bb8d-4820-b331-cce635fbcfeb">
 
-![스크린샷 2023-10-28 오전 3.46.52.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/3aa94f55-b721-4405-81e9-5b31ce779db7/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2023-10-28_%EC%98%A4%EC%A0%84_3.46.52.png)
-
-![스크린샷 2023-10-28 오전 3.48.58.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/bfca91bb-aa9e-4f44-8d1e-4adff27dd69b/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2023-10-28_%EC%98%A4%EC%A0%84_3.48.58.png)
 
 ### 🙋‍♀️ 그런데 딱히 보안이 필요해보이지 않는 사이트도 다 https인데요?
 
