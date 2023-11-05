@@ -3,11 +3,13 @@
 - **Blocking** : 자신의 작업을 진행하다가 다른 작업이 시작되면, 다른 작업이 끝날 때까지 기다렸다가 자신의 작업을 시작하는 것
   - 네트워크 호출, 파일 시스템에서 데이터를 읽고 쓰는 등의 I/O 작업에서 주로 사용됨
   - 단점 : 단일 스레드에서 여러 작업을 처리하는 경우, 다른 작업을 중지시켜야하기 때문에 전반적인 시스템 처리량에 영향을 미칠 수 있음
-  ![스크린샷 2023-11-05 오후 9.53.19.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/2aa0ad79-2b09-4bb5-8ed1-ced6f49dad61/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_9.53.19.png)
+  <img width="408" alt="%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-11-05%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%209 53 19" src="https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/17795913-3670-43a2-a1ff-138b2368afd5">
+
 - **Non-Blocking** : 다른 작업에 관계 없이 자신의 작업을 하는 것
   - 대규모 서버 애플리케이션, 다중 스레딩 및 이벤트 루프를 사용하는 경우
   - 복잡한 코드 및 에러 핸들링이 필요함
-  ![스크린샷 2023-11-05 오후 9.54.09.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/5ca35762-b182-461d-97ef-d5ebaf7720ae/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-11-05_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_9.54.09.png)
+  <img width="502" alt="%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-11-05%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%209 54 09" src="https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/9eab8309-e5d1-4fe9-bb94-f85c2b888a99">
+
 
 ⇒ 다른 주체가 작업할 때 자신의 제어권이 있는지 없는지
 
@@ -30,7 +32,8 @@
 
 - Blocking & Sync
   - 예시
-  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/1ac67d63-6ac6-48d4-887c-ba14b5967c71/Untitled.png)
+  ![Untitled-5](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/a08e162f-7894-4b2f-b65e-62d81d0bf76f)
+
   - Scanner로 입력을 받는 동안 제어권이 넘어감 → Blocking
   - 입력받은 결과를 리턴받아서 다음의 작업을 바로 처리 → Sync
 - Non-blocking & Sync
