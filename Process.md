@@ -14,7 +14,8 @@
 
    > **PCB** : Process Control Block. 운영체제가 프로세스를 관리하기 위해 각 프로세스의 정보를 담아서 관리하는 커널 내의 자료구조.
 
-   ![R1280x0.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/4fc7cfb4-98aa-4d1f-9793-663f9c8b3183/R1280x0.png)
+   <img width="531" alt="R1280x0" src="https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/477dab68-3561-4a65-8dd0-259395923fa6">
+
 
 **🐵 프로세스의 상태(state)**
 
