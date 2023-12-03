@@ -6,6 +6,9 @@
 - 공용 데이터를 어떤 순서로 접근하냐에 따라 실행 결과가 달라지는 경우
 - 말그대로 두 스레드가 하나의 자원을 사용하기 위해 서로 경쟁하는 상태
 
+![image](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/23f8d170-3bf7-44ac-964f-932ddeeb8e71)
+
+
 ## Race Condition의 제어 문제
 
 ### Mutual Exclusion
@@ -24,3 +27,5 @@
 - Mutual Exclusion을 시행 시 발생하는 추가적인 제어문제
 - 각자 프로그램을 실행하기 위해 두 자원 모두에 엑세스 해야 한다고 가정할 때, 프로세스는 두 자원 모두를 필요로 하므로 필요한 두 리소스를 사용하여 프로그램을 수행할 때까지 이미 소유한 리소스를 해제하지 않음
 - 이 상황에서 두 프로세스는 Deadlock 상태에 빠질 수 있음.
+![image](https://github.com/do-sopt-cs-study/CS-LydiaCho/assets/81505421/efca6da4-36fa-49d2-9bc0-b17c1188862d)
+
